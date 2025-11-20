@@ -48,7 +48,7 @@ export default function AuthFlow({ onVerified }) {
       <h2 className="text-white text-xl font-semibold mb-4">Student Sign-in</h2>
       {phase === 'enter-email' && (
         <div className="space-y-3">
-          <input className="w-full px-3 py-2 rounded bg-slate-900 text-white border border-slate-700" placeholder="your.name@polito.it or @unito.it" value={email} onChange={e=>setEmail(e.target.value)} />
+          <input className="w-full px-3 py-2 rounded bg-slate-900 text-white border border-slate-700" placeholder="your.name@studenti.polito.it or @unito.it" value={email} onChange={e=>setEmail(e.target.value)} />
           <button onClick={sendMagic} className="w-full bg-blue-600 hover:bg-blue-500 text-white py-2 rounded">Send Magic Link</button>
         </div>
       )}
